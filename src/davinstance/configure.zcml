@@ -53,6 +53,19 @@
   <!-- <include package="zope.contentprovider" /> -->
   <include package="zope.i18n" />
 
+  <!--
+      WebDAV
+  -->
+  <include package="z3c.dav" />
+
+  <utility
+      factory="z3c.etree.etree.EtreePy25"
+      />
+
+  <adapter
+      factory=".adapters.FileFactory"
+      />
+
   <!-- Override registrations -->
   <includeOverrides package="davinstance" file="overrides.zcml" />
 
