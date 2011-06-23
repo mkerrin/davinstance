@@ -18,3 +18,5 @@ class FileFactory(object):
     def __call__(self, name, content_type, data):
         f = zope.file.file.File(mimeType = content_type)
         f.open("w").write(data)
+
+        return f
