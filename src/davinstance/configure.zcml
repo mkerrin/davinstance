@@ -78,9 +78,6 @@
   <include package="z3c.conditionalviews" />
 
   <include package="z3c.davapp.zopefile" />
-  <adapter
-      factory=".adapters.FileFactory"
-      />
 
   <include package="z3c.davapp.zopelocking" />
 
